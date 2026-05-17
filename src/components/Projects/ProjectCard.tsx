@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Cpu } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { GithubIcon as Github } from "../Icons";
 
 interface ProjectProps {

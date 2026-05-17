@@ -1,15 +1,15 @@
 "use client";
 
-import { useRef, useMemo } from "react";
+import { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 
 function NeuralNetwork() {
   const ref = useRef<THREE.Points>(null!);
+  const [positions, setPositions] = useState<Float32Array | null>(null);
   
-  // Generate random points in a sphere
-  const [positions, connections] = useMemo(() => {
+  useEffect(() => {
     const pos = new Float32Array(2000 * 3);
     for (let i = 0; i < 2000; i++) {
       const theta = 2 * Math.PI * Math.random();
@@ -20,13 +20,17 @@ function NeuralNetwork() {
       pos[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
       pos[i * 3 + 2] = r * Math.cos(phi);
     }
-    return [pos, null];
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setPositions(pos);
   }, []);
 
   useFrame((state, delta) => {
+    if (!ref.current) return;
     ref.current.rotation.x -= delta / 15;
     ref.current.rotation.y -= delta / 20;
   });
+
+  if (!positions) return null;
 
   return (
     <group rotation={[0, 0, Math.PI / 4]}>

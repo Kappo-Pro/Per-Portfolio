@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Terminal, Bot, Sparkles, Zap, Workflow } from "lucide-react";
+import { Terminal, Sparkles, Zap, Workflow } from "lucide-react";
 
 export default function AISection() {
   const aiTools = [
@@ -89,19 +89,19 @@ export default function AISection() {
             <div className="p-8 font-mono text-sm leading-relaxed overflow-x-auto bg-[#030303]/40">
               <div className="flex gap-3 mb-4">
                 <span className="text-blue-400">$</span>
-                <span className="text-gray-300">init-ai-workflow --project "next-gen-portfolio"</span>
+                <span className="text-gray-300">init-ai-workflow --project &quot;next-gen-portfolio&quot;</span>
               </div>
               <div className="text-green-400 mb-4 ml-6">[SUCCESS] Environment linked to Gemini-1.5-Pro</div>
               <div className="flex gap-3 mb-4">
                 <span className="text-blue-400">$</span>
-                <span className="text-gray-300">optimize-architecture --mode "performance"</span>
+                <span className="text-gray-300">optimize-architecture --mode &quot;performance&quot;</span>
               </div>
               <div className="text-purple-400 mb-2 ml-6">Analyzing component tree...</div>
               <div className="text-purple-400 mb-2 ml-6">Applying hydration optimizations...</div>
               <div className="text-green-400 mb-4 ml-6">[DONE] Bundle size reduced by 42%</div>
               <div className="flex gap-3 mb-4">
                 <span className="text-blue-400">$</span>
-                <span className="text-gray-300">deploy --stage "production" --verify-ai</span>
+                <span className="text-gray-300">deploy --stage &quot;production&quot; --verify-ai</span>
               </div>
               <div className="flex items-center gap-2 text-white bg-blue-500/10 border border-blue-500/20 px-4 py-2 rounded-lg w-fit animate-pulse">
                 <div className="w-2 h-2 rounded-full bg-blue-500" />
