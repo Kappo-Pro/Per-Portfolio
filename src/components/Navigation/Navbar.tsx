@@ -11,6 +11,7 @@ const navLinks = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
   { name: "Experience", href: "#experience" },
+  { name: "Credentials", href: "#credentials" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -94,8 +95,8 @@ export default function Navbar() {
             ))}
             <div className="w-full h-[1px] bg-white/5 my-2" />
             <div className="flex gap-6">
-              <a href="#" className="p-3 glass text-gray-400"><Github className="w-5 h-5" /></a>
-              <a href="#" className="p-3 glass text-gray-400"><Linkedin className="w-5 h-5" /></a>
+              <a href="https://github.com/Kappo-Pro" target="_blank" rel="noopener noreferrer" className="p-3 glass text-gray-400"><Github className="w-5 h-5" /></a>
+              <a href="https://www.linkedin.com/in/r-kapil-kumar-938623237/" target="_blank" rel="noopener noreferrer" className="p-3 glass text-gray-400"><Linkedin className="w-5 h-5" /></a>
             </div>
           </motion.div>
         )}

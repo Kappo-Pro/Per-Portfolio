@@ -6,24 +6,24 @@ import { Terminal, Sparkles, Zap, Workflow } from "lucide-react";
 export default function AISection() {
   const aiTools = [
     {
-      icon: <Terminal className="w-6 h-6" />,
-      name: "Claude CLI",
-      description: "Automated refactoring and codebase analysis."
+      icon: <Workflow className="w-6 h-6" />,
+      name: "LangGraph",
+      description: "Orchestrating multi-node agentic state graphs and intent-based routing."
     },
     {
-      icon: <Workflow className="w-6 h-6" />,
-      name: "Antigravity",
-      description: "Agentic orchestration for complex engineering tasks."
+      icon: <Terminal className="w-6 h-6" />,
+      name: "LangSmith",
+      description: "Continuous regression testing and token utilization evaluations."
     },
     {
       icon: <Sparkles className="w-6 h-6" />,
-      name: "Gemini Pro",
-      description: "Multimodal AI integrations for production systems."
+      name: "Gemini 3.1",
+      description: "High-efficiency multimodal integration and vision system optimization."
     },
     {
       icon: <Zap className="w-6 h-6" />,
-      name: "Prompt Eng",
-      description: "High-precision system design for LLM safety."
+      name: "MediaPipe",
+      description: "Real-time posture detection and Range of Motion computer vision tracking."
     }
   ];
 
@@ -89,23 +89,24 @@ export default function AISection() {
             <div className="p-8 font-mono text-sm leading-relaxed overflow-x-auto bg-[#030303]/40">
               <div className="flex gap-3 mb-4">
                 <span className="text-blue-400">$</span>
-                <span className="text-gray-300">init-ai-workflow --project &quot;next-gen-portfolio&quot;</span>
+                <span className="text-gray-300">langgraph deploy --project &quot;medvibe-assistant&quot;</span>
               </div>
-              <div className="text-green-400 mb-4 ml-6">[SUCCESS] Environment linked to Gemini-1.5-Pro</div>
+              <div className="text-green-400 mb-4 ml-6">[SUCCESS] Deployed 4-node agentic state graph</div>
               <div className="flex gap-3 mb-4">
                 <span className="text-blue-400">$</span>
-                <span className="text-gray-300">optimize-architecture --mode &quot;performance&quot;</span>
+                <span className="text-gray-300">pytest tests/regression_eval.py --target &quot;langsmith&quot;</span>
               </div>
-              <div className="text-purple-400 mb-2 ml-6">Analyzing component tree...</div>
-              <div className="text-purple-400 mb-2 ml-6">Applying hydration optimizations...</div>
-              <div className="text-green-400 mb-4 ml-6">[DONE] Bundle size reduced by 42%</div>
+              <div className="text-purple-400 mb-2 ml-6">Running 100+ edge-case test variants...</div>
+              <div className="text-purple-400 mb-2 ml-6">Evaluating slot reservation and intent triaging loops...</div>
+              <div className="text-green-400 mb-4 ml-6">[DONE] 100% pass rate. Token overhead reduced by 40%</div>
               <div className="flex gap-3 mb-4">
                 <span className="text-blue-400">$</span>
-                <span className="text-gray-300">deploy --stage &quot;production&quot; --verify-ai</span>
+                <span className="text-gray-300">latency-check --endpoint &quot;/whatsapp/webhook&quot;</span>
               </div>
+              <div className="text-green-400 mb-4 ml-6">[METRIC] Response Latency: 2.98s (Slashed from 10.2s - 70% reduction)</div>
               <div className="flex items-center gap-2 text-white bg-blue-500/10 border border-blue-500/20 px-4 py-2 rounded-lg w-fit animate-pulse">
                 <div className="w-2 h-2 rounded-full bg-blue-500" />
-                Deploying to Edge...
+                Monitoring Agent State Relocations...
               </div>
             </div>
           </div>

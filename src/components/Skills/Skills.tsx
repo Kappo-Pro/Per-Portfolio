@@ -5,24 +5,24 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "Frontend",
-    skills: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Three.js"]
+    title: "Hard Skills (Core Frameworks)",
+    skills: ["React", "NextJS", "Jetpack Compose", "NestJS (Node.js)", "Spring Boot", "FastAPI", "Prisma ORM"]
   },
   {
-    title: "Backend",
-    skills: ["Node.js", "NestJS", "FastAPI", "Spring Boot", "Prisma", "Python", "Java"]
+    title: "Languages & Databases",
+    skills: ["Java", "Kotlin", "Python", "C++", "JavaScript", "TypeScript", "MySQL", "MongoDB", "SQL"]
   },
   {
-    title: "AI & Automation",
-    skills: ["Claude CLI", "Gemini AI", "Antigravity", "Prompt Engineering", "Workflow Automation", "LLM Integration"]
+    title: "AI Orchestration & MLOps",
+    skills: ["LangGraph (State Machines)", "LangChain", "LangSmith (Regression Testing)", "Chroma DB", "Vector Embedding Optimization"]
   },
   {
-    title: "Infrastructure & Tools",
-    skills: ["Docker", "Git", "Postman", "CI/CD", "Performance Optimization", "Clean Architecture"]
+    title: "LLMs & Vision Systems",
+    skills: ["Gemini 3.1 Flash-Lite", "OpenAI API", "Llama-2", "MediaPipe", "TensorFlow.js"]
   },
   {
-    title: "Database & Mobile",
-    skills: ["MongoDB", "MySQL", "PostgreSQL", "Firebase", "Kotlin", "Android SDK"]
+    title: "Tools & Architecture",
+    skills: ["Git", "AWS", "Docker", "OOP", "System Design", "DSA", "Agile / Scrum"]
   }
 ];
 

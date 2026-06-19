@@ -39,8 +39,10 @@ export default function About() {
         <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-blue-500 mb-6">About Me</h2>
         <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Engineering for the <br/><span className="text-gradient">AI Revolution</span></h3>
         <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg leading-relaxed font-light">
-          I am R. Kapil Kumar, a Full-Stack Engineer dedicated to building the next generation of 
-          software.
+          I am R. Kapil Kumar, a Full-Stack Developer and Associate Cloud Engineer with 2.5+ years of 
+          professional experience. I specialize in building highly scalable, performant, and 
+          intelligent software systems by combining a strong background in analytical mathematics 
+          with robust cloud-based engineering.
         </p>
       </motion.div>
 
@@ -83,10 +85,10 @@ export default function About() {
           </div>
           <div className="grid grid-cols-2 gap-4 w-full lg:w-auto shrink-0">
             {[
-              { val: "50%", label: "Efficiency", color: "blue" },
-              { val: "99%", label: "Reliability", color: "purple" },
-              { val: "15+", label: "AI Tools", color: "green" },
-              { val: "100%", label: "Results", color: "yellow" }
+              { val: "40%+", label: "UI Boost", color: "blue" },
+              { val: "-25%", label: "Load Times", color: "purple" },
+              { val: "-70%", label: "API Latency", color: "green" },
+              { val: "100%", label: "QA Pass Rate", color: "yellow" }
             ].map((stat, i) => (
               <div key={i} className="p-6 glass text-center border-white/5 hover:border-blue-500/20 transition-all min-w-[120px]">
                 <div className={`text-3xl font-bold text-${stat.color}-500 mb-1`}>{stat.val}</div>

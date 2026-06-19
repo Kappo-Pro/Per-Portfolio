@@ -4,6 +4,7 @@ import Skills from "@/components/Skills/Skills";
 import Projects from "@/components/Projects/Projects";
 import AISection from "@/components/AI/AISection";
 import Experience from "@/components/Experience/Experience";
+import Credentials from "@/components/Credentials/Credentials";
 import Contact from "@/components/Contact/Contact";
 import Navbar from "@/components/Navigation/Navbar";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <AISection />
         <Projects />
         <Experience />
+        <Credentials />
         <Contact />
       </div>
       

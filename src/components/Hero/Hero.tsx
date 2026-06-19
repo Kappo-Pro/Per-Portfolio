@@ -38,7 +38,7 @@ export default function Hero() {
       >
         <motion.div variants={itemVariants} className="mb-8">
           <span className="px-4 py-2 border border-blue-500/20 bg-blue-500/5 text-blue-400 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">
-            Full-Stack + AI Engineer
+            Full-Stack Developer & Associate Cloud Engineer
           </span>
         </motion.div>
 
@@ -53,8 +53,8 @@ export default function Hero() {
           variants={itemVariants}
           className="text-base md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light"
         >
-          Specializing in <span className="text-white font-medium">AI-Integrated Systems</span>,
-          scalable backend architectures, and high-performance modern web experiences.
+          Specializing in the architectural design, deployment, and performance optimization of 
+          scalable <span className="text-white font-medium">web, mobile, and AI-driven applications</span>.
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-6">

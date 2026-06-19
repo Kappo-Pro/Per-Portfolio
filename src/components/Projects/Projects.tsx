@@ -5,35 +5,18 @@ import { ProjectCard } from "./ProjectCard";
 
 const projects = [
   {
-    title: "CARESPACE",
-    description: "A comprehensive healthcare platform featuring role-based dashboards, real-time patient-doctor communication, and automated scheduling systems.",
-    image: "/projects/carespace.png",
-    tech: ["React", "NestJS", "Prisma", "Kotlin", "PostgreSQL"],
-    github: "#",
-    aiFocus: "Implemented intelligent patient prioritization and automated assessment summaries using custom backend logic."
+    title: "CareSpace AI – Digital Healthcare Platform [NexTurn]",
+    description: "A production-ready healthcare platform featuring clinical workflows, automated scheduling, and real-time patient status tracking.",
+    tech: ["React", "NestJS", "Prisma", "Kotlin", "MediaPipe", "TensorFlow.js", "OpenAI API"],
+    github: "https://github.com/Kappo-Pro",
+    aiFocus: "Formulated AI-assisted treatment recommendation model via OpenAI APIs, reducing clinician workload by 35%. Deployed real-time posture detection and automated Range of Motion (ROM) analysis using MediaPipe & TensorFlow.js (98% accuracy for 2,000+ patients). Refactored legacy views into Jetpack Compose driving 45% increase in UI efficiency."
   },
   {
-    title: "AI Healthcare Chatbot",
-    description: "Multi-channel AI assistant for symptom analysis and medical recommendations. Supports image analysis for skin condition detection.",
-    image: "/projects/chatbot.png",
-    tech: ["FastAPI", "Twilio", "LLaMA-2", "Gemini AI", "Python"],
-    github: "#",
-    aiFocus: "Integrated RAG (Retrieval-Augmented Generation) for accurate medical knowledge retrieval and Gemini Vision for image-based symptom analysis."
-  },
-  {
-    title: "Quantum Task Manager",
-    description: "High-performance task management system with real-time collaboration features and automated productivity reporting.",
-    image: "/projects/taskmanager.png",
-    tech: ["React", "Spring Boot", "MySQL", "WebSocket"],
-    github: "#",
-    aiFocus: "AI-powered task estimation and automated sub-task generation based on project requirements."
-  },
-  {
-    title: "VibeFlow Music",
-    description: "Android music application with offline support, firebase synchronization, and an intuitive modern user interface.",
-    image: "/projects/musicapp.png",
-    tech: ["Kotlin", "Firebase", "Room DB", "ExoPlayer"],
-    github: "#"
+    title: "MedVibe Hospital Autonomous WhatsApp Care Assistant",
+    description: "An autonomous multi-node conversational agent automating appointment bookings, symptom routing, and clinical documentation.",
+    tech: ["FastAPI", "LangGraph", "LangSmith", "Chroma DB", "Python", "Twilio", "Synthea"],
+    github: "https://github.com/Kappo-Pro",
+    aiFocus: "Orchestrated multi-node graphs using LangGraph to manage 10,000+ patient profiles. Reduced response latency by 70% (~10s to ~3s) via clinical reasoning optimizations, and implemented sub-second (<450ms) intent-based edge routing. Built type-safe data pipelines synced with Synthea datasets and evaluated using LangSmith."
   }
 ];
 

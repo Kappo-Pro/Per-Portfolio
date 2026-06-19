@@ -5,16 +5,25 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    company: "Portfolio Projects & Freelancing",
-    role: "Full-Stack + AI Engineer",
-    period: "2023 - Present",
-    description: "Developing end-to-end AI-integrated platforms, focusing on healthcare and productivity tools. Specializing in high-performance backends and interactive frontends."
+    company: "NexTurn",
+    role: "Associate Cloud Engineer (Full-Stack)",
+    period: "01/2024 - Present",
+    description: [
+      "Modernized critical application interfaces across 20+ production screens, delivering a 40%+ increase in UI performance and reducing client-side load times by 25%.",
+      "Engineered scalable web architectures using NestJS and Prisma, building secure RESTful APIs that improved system responsiveness by 30%.",
+      "Led and managed a team of 5 junior engineering interns, delegating daily sprints and accelerating feature delivery timelines through systematic code reviews.",
+      "Collaborated on cloud-based system designs and data management strategies to support seamless frontend-backend integration for 10,000+ active users."
+    ]
   },
   {
-    company: "Full-Stack Development Focus",
-    role: "Software Developer",
-    period: "2022 - 2023",
-    description: "Built robust web and mobile applications using React, Node.js, and Kotlin. Focused on clean architecture and efficient database management."
+    company: "NexTurn",
+    role: "Software Engineer Intern",
+    period: "09/2022 - 01/2024",
+    description: [
+      "Constructed feature-rich applications leveraging Angular, React, and Spring Boot, contributing to a 15% reduction in production bugs via modular testing.",
+      "Optimized relational and non-relational database schemas across MySQL and MongoDB, improving query execution speeds by 20%.",
+      "Participated in Agile Scrum ceremonies across 30+ sprint cycles, utilizing Git to successfully manage and merge 50+ multi-developer pull requests."
+    ]
   }
 ];
 
@@ -60,9 +69,11 @@ export default function Experience() {
                   </div>
                   <h4 className="text-lg font-bold mb-1 text-white/90">{exp.role}</h4>
                   <p className="text-blue-400 font-medium mb-4 text-sm">{exp.company}</p>
-                  <p className="text-gray-400 text-[11px] leading-relaxed font-light">
-                    {exp.description}
-                  </p>
+                  <ul className="text-gray-400 text-[11px] leading-relaxed font-light list-disc pl-4 space-y-1.5">
+                    {exp.description.map((bullet, bIdx) => (
+                      <li key={bIdx}>{bullet}</li>
+                    ))}
+                  </ul>
                 </div>
               </div>
 
