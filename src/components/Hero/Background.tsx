@@ -26,8 +26,12 @@ function NeuralNetwork() {
 
   useFrame((state, delta) => {
     if (!ref.current) return;
-    ref.current.rotation.x -= delta / 15;
-    ref.current.rotation.y -= delta / 20;
+    ref.current.rotation.x -= delta / 20;
+    ref.current.rotation.y -= delta / 25;
+    if (ref.current.material) {
+      const material = ref.current.material as THREE.PointsMaterial;
+      material.opacity = 0.2 + 0.8 * Math.abs(Math.sin(state.clock.getElapsedTime() * 2));
+    }
   });
 
   if (!positions) return null;
@@ -37,8 +41,8 @@ function NeuralNetwork() {
       <Points ref={ref} positions={positions} stride={3} frustumCulled={false}>
         <PointMaterial
           transparent
-          color="#3b82f6"
-          size={0.015}
+          color="#ffffff"
+          size={0.006}
           sizeAttenuation={true}
           depthWrite={false}
           blending={THREE.AdditiveBlending}

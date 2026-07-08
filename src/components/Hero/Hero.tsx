@@ -37,8 +37,8 @@ export default function Hero() {
         className="z-10 text-center px-8 max-w-5xl mx-auto"
       >
         <motion.div variants={itemVariants} className="mb-8">
-          <span className="px-4 py-2 border border-blue-500/20 bg-blue-500/5 text-blue-400 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">
-            Full-Stack Developer & Associate Cloud Engineer
+          <span className="px-4 py-2 border border-white/10 bg-white/5 text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">
+            AI Engineer & Systems Architect | Specializing in Agentic Workflows & Enterprise RAG
           </span>
         </motion.div>
 
@@ -51,10 +51,12 @@ export default function Hero() {
 
         <motion.p
           variants={itemVariants}
-          className="text-base md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light"
+          className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light"
         >
-          Specializing in the architectural design, deployment, and performance optimization of 
-          scalable <span className="text-white font-medium">web, mobile, and AI-driven applications</span>.
+          Architecting high-throughput production systems at the intersection of NLP research and enterprise backends. 
+          Driven by a 3-year progression from full-stack systems to complex agentic orchestration with 
+          <span className="text-white font-medium"> FastAPI, NestJS, AWS, and Azure</span>. Proven in leading technical 
+          discovery for greenfield projects and orchestrating cross-functional teams of up to 11 engineers to deploy resilient AI solutions.
         </motion.p>
 
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -99,7 +101,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 hidden md:flex flex-col items-center gap-3 text-gray-500"
       >
         <span className="text-[10px] uppercase tracking-[0.3em] font-bold">Scroll</span>
-        <div className="w-[1px] h-12 bg-gradient-to-b from-blue-500 to-transparent" />
+        <div className="w-[1px] h-12 bg-gradient-to-b from-white/30 to-transparent" />
       </motion.div>
     </section>
   );

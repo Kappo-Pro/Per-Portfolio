@@ -54,7 +54,7 @@ export default function Credentials() {
         transition={{ duration: 0.8 }}
         className="text-center mb-16"
       >
-        <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-blue-500 mb-6">Credentials</h2>
+        <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-400 mb-6">Credentials</h2>
         <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Education & <span className="text-gradient">Qualifications</span></h3>
         <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
           My academic foundation, professional certifications, and language proficiencies.
@@ -71,18 +71,18 @@ export default function Credentials() {
           className="flex flex-col gap-6"
         >
           <div className="flex items-center gap-3 border-b border-white/5 pb-3">
-            <GraduationCap className="w-6 h-6 text-blue-500" />
+            <GraduationCap className="w-6 h-6 text-gray-400" />
             <h4 className="text-xl font-bold text-white/90">Education</h4>
           </div>
           
           <div className="space-y-4">
             {education.map((edu, index) => (
-              <div key={index} className="p-6 glass border-white/5 hover:border-blue-500/20 transition-all flex gap-4">
+              <div key={index} className="p-6 glass border-white/5 hover:border-white/20 transition-all flex gap-4">
                 <div className="p-2.5 bg-white/5 border border-white/10 h-fit self-start">
                   {edu.icon}
                 </div>
                 <div>
-                  <span className="text-[10px] font-bold uppercase tracking-wider text-blue-400">{edu.period}</span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-white/60">{edu.period}</span>
                   <h5 className="text-base font-bold text-white/95 mt-1">{edu.degree}</h5>
                   <p className="text-xs text-gray-500 mt-1 font-light">{edu.institution}</p>
                 </div>
@@ -100,15 +100,15 @@ export default function Credentials() {
           className="flex flex-col gap-6"
         >
           <div className="flex items-center gap-3 border-b border-white/5 pb-3">
-            <Award className="w-6 h-6 text-purple-500" />
+            <Award className="w-6 h-6 text-gray-400" />
             <h4 className="text-xl font-bold text-white/90">Certifications</h4>
           </div>
 
           <div className="grid grid-cols-1 gap-4">
             {certifications.map((cert, index) => (
-              <div key={index} className="p-6 glass border-white/5 hover:border-purple-500/20 transition-all group flex flex-col justify-between">
+              <div key={index} className="p-6 glass border-white/5 hover:border-white/20 transition-all group flex flex-col justify-between">
                 <div>
-                  <h5 className="text-sm font-bold text-white/90 group-hover:text-purple-400 transition-colors uppercase tracking-wider">{cert.title}</h5>
+                  <h5 className="text-sm font-bold text-white/90 group-hover:text-white transition-colors uppercase tracking-wider">{cert.title}</h5>
                   <p className="text-xs text-gray-500 mt-2 font-light">{cert.subtitle}</p>
                 </div>
               </div>
@@ -125,11 +125,11 @@ export default function Credentials() {
           className="flex flex-col gap-6"
         >
           <div className="flex items-center gap-3 border-b border-white/5 pb-3">
-            <Globe className="w-6 h-6 text-green-500" />
+            <Globe className="w-6 h-6 text-gray-400" />
             <h4 className="text-xl font-bold text-white/90">Languages</h4>
           </div>
 
-          <div className="p-6 glass border-white/5 hover:border-green-500/20 transition-all space-y-6">
+          <div className="p-6 glass border-white/5 hover:border-white/20 transition-all space-y-6">
             {languages.map((lang, index) => (
               <div key={index} className="flex justify-between items-center">
                 <div>
@@ -138,7 +138,7 @@ export default function Credentials() {
                 </div>
                 <div className="w-24 h-1.5 bg-white/5 rounded-full overflow-hidden border border-white/5">
                   <div
-                    className="h-full bg-gradient-to-r from-green-500 to-emerald-400"
+                    className="h-full bg-gradient-to-r from-white to-gray-500"
                     style={{
                       width: 
                         lang.level === "Native" 
