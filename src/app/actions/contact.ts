@@ -1,7 +1,11 @@
 'use server';
 
-import { createClient } from '@/utils/supabase/server';
-import { cookies } from 'next/headers';
+import { Resend } from 'resend';
+
+let resend: Resend | null = null;
+if (process.env.RESEND_API_KEY) {
+  resend = new Resend(process.env.RESEND_API_KEY);
+}
 
 export async function submitContactForm(formData: FormData) {
   const name = formData.get('name') as string;
@@ -13,23 +17,22 @@ export async function submitContactForm(formData: FormData) {
   }
 
   try {
-    const cookieStore = await cookies();
-    const supabase = await createClient(cookieStore);
-
-    const { error } = await supabase
-      .from('messages')
-      .insert([
-        { name, email, message }
-      ]);
-
-    if (error) {
-      console.error('Supabase error:', error);
-      return { error: 'Failed to send message. Please try again later.' };
+    if (!resend) {
+      console.error('RESEND_API_KEY is missing');
+      return { error: 'Email service not configured. Please set RESEND_API_KEY.' };
     }
+
+    await resend.emails.send({
+      from: 'Portfolio Contact Form <onboarding@resend.dev>',
+      to: 'rkapilkumar2001@gmail.com',
+      subject: `New Portfolio Message from ${name}`,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+      replyTo: email,
+    });
 
     return { success: true };
   } catch (err) {
     console.error('Action error:', err);
-    return { error: 'An unexpected error occurred.' };
+    return { error: 'An unexpected error occurred sending your message.' };
   }
 }

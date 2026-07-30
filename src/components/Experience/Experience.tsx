@@ -5,48 +5,57 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    company: "NexTurn",
-    role: "AI Engineer / Solution Consultant",
-    period: "08/2025 - Present",
+    company: "NEXTURN",
+    role: "Associate Cloud Engineer III",
+    period: "January 2026 – Present",
     description: [
-      "Own the end-to-end technical discovery and architectural design of enterprise agentic workflows and hybrid RAG implementations across AWS and Azure.",
-      "Lead and mentor a cross-functional team of 11 engineers to deploy secure, HIPAA-compliant clinical systems.",
-      "Designed deterministic multi-agent state machines via LangGraph, cutting system execution latency from ~10s to ~3s and trimming token overhead by 40%.",
-      "Orchestrated local-cloud document ingestion pipelines using boto3/S3, integrating BM25 and dense embedding rerankers for high-precision Bedrock retrieval."
+      "Led engineering workflows for a group of 11 full-time developers over a 3-month cycle, expanding milestone deployment speeds by 20%.",
+      "Architected 100% of technical choices for stakeholders, removing organizational project management overhead.",
+      "Built a multi-role financial trading network using Spring Boot and Next.js to process corporate carbon credit asset allocations.",
+      "Configured recommendation algorithms using integrated LLMs to calculate portfolio splits matching raw emissions metrics.",
+      "Authored MedVibe, a production WhatsApp clinical chatbot via FastAPI and LangGraph, decreasing turnaround latency from 10.0 to 3.0 seconds to eliminate webhook timeout hazards."
     ]
   },
   {
-    company: "NexTurn",
-    role: "Associate Cloud Engineer",
-    period: "01/2024 - 08/2025",
+    company: "NEXTURN",
+    role: "Associate Cloud Engineer II",
+    period: "January 2025 – December 2025",
     description: [
-      "Modernized critical application interfaces across 20+ production screens, delivering a 40%+ increase in UI performance and reducing client-side load times by 25%.",
-      "Engineered scalable web architectures using NestJS and Prisma, building secure RESTful APIs that improved system responsiveness by 30%.",
-      "Led and managed a team of 5 junior engineering interns, delegating daily sprints and accelerating feature delivery timelines through systematic code reviews.",
-      "Collaborated on cloud-based system designs and data management strategies to support seamless frontend-backend integration for 10,000+ active users."
+      "Designed the CARESPACE AI physical evaluation framework using TensorFlow MediaPipe to analyze 20+ skeletal points for posture validation.",
+      "Formulated patient diagnostic pipelines by writing API script routines that parse raw text inputs into structured JSON models.",
+      "Programmed backend services using NestJS and Prisma ORM, sustaining a 99.9% application uptime rate."
     ]
   },
   {
-    company: "NexTurn",
-    role: "Software Engineer Intern",
-    period: "09/2022 - 01/2024",
+    company: "NEXTURN",
+    role: "Associate Cloud Engineer I",
+    period: "January 2024 – December 2024",
     description: [
-      "Constructed feature-rich applications leveraging Angular, React, and Spring Boot, contributing to a 15% reduction in production bugs via modular testing.",
-      "Optimized relational and non-relational database schemas across MySQL and MongoDB, improving query execution speeds by 20%.",
-      "Participated in Agile Scrum ceremonies across 30+ sprint cycles, utilizing Git to successfully manage and merge 50+ multi-developer pull requests."
+      "Launched a cross-platform application ecosystem serving over 5,000 active users using React, Next.js, and Kotlin.",
+      "Reduced asset delivery delays by 35% using Azure Cloud Storage to manage electronic medical records.",
+      "Optimized infrastructure resource provisioning strategies to ensure availability for multi-tenant application domains."
+    ]
+  },
+  {
+    company: "NEXTURN",
+    role: "Associate Software Engineer (Intern)",
+    period: "September 2022 – December 2023",
+    description: [
+      "Shipped 15+ production feature additions utilizing Java and React.js within Agile deployment cycles.",
+      "Managed database structures using SQL and MongoDB, lowering local query execution latency by 18% during integration testing."
     ]
   }
 ];
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 px-6 max-w-7xl mx-auto w-full">
+    <section id="experience" className="py-32 md:py-48 px-6 max-w-7xl mx-auto w-full">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-32"
+        className="text-center mb-36"
       >
         <h2 className="text-sm font-bold tracking-[0.4em] uppercase text-gray-400 mb-6">Journey</h2>
         <h3 className="text-4xl md:text-7xl font-bold mb-10 leading-tight">Professional <span className="text-gradient">Timeline</span></h3>
@@ -58,7 +67,7 @@ export default function Experience() {
       <div className="relative max-w-4xl mx-auto">
         <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-white/20 via-white/10 to-transparent" />
 
-        <div className="space-y-20">
+        <div className="space-y-32">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -71,7 +80,7 @@ export default function Experience() {
               }`}
             >
               <div className="w-full md:w-[45%]">
-                <div className="p-6 glass border-white/5 hover:border-white/25 transition-all shadow-xl group">
+                <div className="p-8 glass border-white/5 hover:border-white/25 transition-all shadow-xl group">
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-white/90 bg-white/5 border border-white/10 px-2.5 py-1">
                       {exp.period}
@@ -80,7 +89,7 @@ export default function Experience() {
                   </div>
                   <h4 className="text-lg font-bold mb-1 text-white/90">{exp.role}</h4>
                   <p className="text-white/60 font-medium mb-4 text-sm">{exp.company}</p>
-                  <ul className="text-gray-400 text-[11px] leading-relaxed font-light list-disc pl-4 space-y-1.5">
+                  <ul className="text-gray-400 text-[11px] leading-relaxed font-light list-disc pl-4 space-y-2">
                     {exp.description.map((bullet, bIdx) => (
                       <li key={bIdx}>{bullet}</li>
                     ))}

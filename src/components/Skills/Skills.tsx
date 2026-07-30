@@ -5,69 +5,65 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "AI Orchestration & MLOps",
+    title: "AI & Machine Learning",
     skills: [
-      "LangGraph (State Machines)",
-      "LangSmith (Regression Testing)",
+      "LangGraph",
       "LangChain",
-      "Agentic Workflows",
-      "LLM Evaluation & Tracing",
-      "Prompt Engineering",
       "OpenAI API",
-      "Gemini API"
+      "Gemini 3.1 Flash-Lite",
+      "RAG",
+      "ChromaDB",
+      "TensorFlow MediaPipe"
     ]
   },
   {
-    title: "Cloud & Backend Infrastructure",
+    title: "Backend Development",
     skills: [
-      "AWS (S3, Bedrock)",
-      "Microsoft Azure",
-      "FastAPI (Python)",
-      "NestJS (Node.js)",
-      "Spring Boot (Java)",
-      "Docker",
-      "RESTful APIs",
-      "Agile / Scrum"
-    ]
-  },
-  {
-    title: "Vector Data & Search",
-    skills: [
-      "Chroma DB",
-      "Hybrid Search (Dense + Sparse)",
-      "Reciprocal Rank Fusion (RRF)",
-      "Cross-Encoder Reranking",
-      "dense semantic search (all-MiniLM-L6-v2)",
-      "sparse keyword matching (BM25Okapi)",
-      "Vector Embedding Optimization"
-    ]
-  },
-  {
-    title: "Core Languages & Tooling",
-    skills: [
+      "Java",
+      "Spring Boot",
+      "Node.js",
+      "NestJS",
       "Python",
+      "FastAPI",
+      "Prisma ORM",
+      "Strapi CMS"
+    ]
+  },
+  {
+    title: "Frontend & Mobile",
+    skills: [
+      "React.js",
+      "Next.js",
+      "Angular",
       "TypeScript",
       "JavaScript",
-      "Java",
-      "Kotlin",
-      "C++",
-      "SQL",
-      "Prisma ORM",
+      "Tailwind CSS",
+      "Android (Kotlin)"
+    ]
+  },
+  {
+    title: "Cloud & Infrastructure",
+    skills: [
+      "AWS",
+      "Azure Cloud Storage",
+      "Docker",
       "Git",
-      "System Design"
+      "REST APIs",
+      "SQL",
+      "MongoDB"
     ]
   }
 ];
 
 export default function Skills() {
   return (
-    <section id="skills" className="py-20 px-6 max-w-7xl mx-auto w-full">
+    <section id="skills" className="py-32 md:py-48 px-6 max-w-7xl mx-auto w-full">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-16"
+        className="text-center mb-24"
       >
         <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-400 mb-6">Expertise</h2>
         <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Technical <span className="text-gradient">Arsenal</span></h3>
@@ -77,7 +73,7 @@ export default function Skills() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
         {skillCategories.map((category, index) => (
           <motion.div
             key={index}
@@ -85,7 +81,7 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="p-8 glass hover:border-white/10 transition-all shadow-xl group flex flex-col"
+            className="p-10 glass hover:border-white/10 transition-all shadow-xl group flex flex-col"
           >
             <h4 className="text-lg font-bold mb-6 text-white/90 group-hover:text-white transition-colors border-b border-white/5 pb-2">{category.title}</h4>
             <div className="flex flex-wrap gap-2">

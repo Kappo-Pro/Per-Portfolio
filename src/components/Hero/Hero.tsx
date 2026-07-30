@@ -27,39 +27,39 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative min-h-[85vh] w-full flex flex-col items-center justify-center overflow-hidden py-20 md:py-24">
+    <section className="relative min-h-[90vh] w-full flex flex-col items-center justify-center overflow-hidden py-32 md:py-48">
       <HeroBackground />
 
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="z-10 text-center px-8 max-w-5xl mx-auto"
+        className="z-10 text-center px-8 max-w-5xl mx-auto animate-fade-in"
       >
-        <motion.div variants={itemVariants} className="mb-8">
+        <motion.div variants={itemVariants} className="mb-12">
           <span className="px-4 py-2 border border-white/10 bg-white/5 text-white/80 text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">
-            AI Engineer & Systems Architect | Specializing in Agentic Workflows & Enterprise RAG
+            Technical Lead & AI Engineer | Specializing in Cloud Architectures & Agentic Workflows
           </span>
         </motion.div>
 
         <motion.h1
           variants={itemVariants}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-8 leading-[1] text-white"
+          className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter mb-12 leading-[1] text-white"
         >
           I&apos;m <span className="text-gradient">Kapil Kumar</span>
         </motion.h1>
 
         <motion.p
           variants={itemVariants}
-          className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto mb-12 leading-relaxed font-light"
+          className="text-base md:text-lg text-gray-400 max-w-3xl mx-auto mb-16 leading-relaxed font-light"
         >
-          Architecting high-throughput production systems at the intersection of NLP research and enterprise backends. 
-          Driven by a 3-year progression from full-stack systems to complex agentic orchestration with 
-          <span className="text-white font-medium"> FastAPI, NestJS, AWS, and Azure</span>. Proven in leading technical 
-          discovery for greenfield projects and orchestrating cross-functional teams of up to 11 engineers to deploy resilient AI solutions.
+          Engineering robust cloud architectures, high-performance applications, and state-machine platforms.
+          Driven by 2.7 years of employment at the intersection of NLP research and enterprise backends using
+          <span className="text-white font-medium"> FastAPI, NestJS, Spring Boot, AWS, and Azure</span>. Proven in leading
+          technical discovery and directing cross-functional development teams of up to 11 engineers to deploy resilient AI solutions.
         </motion.p>
 
-        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-6">
+        <motion.div variants={itemVariants} className="flex flex-col sm:flex-row items-center justify-center gap-8">
           <button className="w-full sm:w-auto px-10 py-4 bg-white text-black font-bold hover:bg-gray-200 transition-all flex items-center justify-center gap-3 group shadow-2xl">
             Explore My Work
             <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />

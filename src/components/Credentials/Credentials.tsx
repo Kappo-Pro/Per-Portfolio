@@ -46,7 +46,7 @@ const languages = [
 
 export default function Credentials() {
   return (
-    <section id="credentials" className="py-20 px-6 max-w-7xl mx-auto w-full">
+    <section id="credentials" className="py-32 md:py-48 px-6 max-w-7xl mx-auto w-full">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -61,7 +61,7 @@ export default function Credentials() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
         {/* Education Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

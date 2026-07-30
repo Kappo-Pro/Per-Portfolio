@@ -60,7 +60,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20 px-6 max-w-7xl mx-auto w-full">
+    <section id="projects" className="py-32 md:py-48 px-6 max-w-7xl mx-auto w-full">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -75,7 +75,7 @@ export default function Projects() {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

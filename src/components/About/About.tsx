@@ -28,26 +28,22 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 px-6 max-w-7xl mx-auto w-full">
+    <section id="about" className="py-32 md:py-48 px-6 max-w-7xl mx-auto w-full">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="text-center mb-16"
+        className="text-center mb-24"
       >
         <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-400 mb-6">About Me</h2>
         <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Engineering for the <br/><span className="text-gradient">AI Revolution</span></h3>
         <p className="text-gray-400 max-w-3xl mx-auto text-base md:text-lg leading-relaxed font-light">
-          I am R. Kapil Kumar, a Systems Architect and AI Engineer. Over the last 3 years, I have progressed from 
-          engineering enterprise full-stack web architectures to designing complex GenAI orchestrations and multi-agent systems. 
-          By bridging the gap between advanced NLP research and robust, production-grade cloud backends, I build systems that 
-          optimize clinical reasoning latency, reduce operational overhead, and scale to thousands of active sessions. 
-          My experience spans leading technical discovery for greenfield projects and mentoring cross-functional teams of up to 11 engineers.
+          I am R. Kapil Kumar, a Technical Lead and AI Engineer. Over my 2.7 years of professional employment, I have engineered cloud architectures, applications, and state-machine platforms while managing cross-border client specifications and directing development teams of up to 11 engineers. By bridging the gap between advanced AI research and robust, production-grade cloud backends, I build systems that optimize clinical reasoning latency, reduce operational overhead, and scale to thousands of active sessions.
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-32">
         {features.map((feature, index) => (
           <motion.div
             key={index}
@@ -55,7 +51,7 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="p-8 glass glass-hover flex flex-col items-start min-h-[250px]"
+            className="p-10 glass glass-hover flex flex-col items-start min-h-[250px]"
           >
             <div className="mb-6 p-3 bg-white/5 border border-white/10">
               {feature.icon}
@@ -73,7 +69,7 @@ export default function About() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
-        className="p-8 md:p-12 glass relative overflow-hidden group border-white/5 shadow-2xl"
+        className="p-12 md:p-16 glass relative overflow-hidden group border-white/5 shadow-2xl"
       >
         <div className="relative z-10 flex flex-col lg:flex-row gap-12 items-center">
           <div className="flex-1">
