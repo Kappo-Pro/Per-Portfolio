@@ -41,8 +41,8 @@ function NeuralNetwork() {
       <Points ref={ref} positions={positions} stride={3} frustumCulled={false}>
         <PointMaterial
           transparent
-          color="#ffffff"
-          size={0.006}
+          color="#22d3ee"
+          size={0.007}
           sizeAttenuation={true}
           depthWrite={false}
           blending={THREE.AdditiveBlending}
@@ -54,11 +54,12 @@ function NeuralNetwork() {
 
 export default function HeroBackground() {
   return (
-    <div className="absolute inset-0 -z-10 bg-[#030303]">
+    <div className="absolute inset-0 -z-10 bg-[#020b0e] overflow-hidden">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <NeuralNetwork />
       </Canvas>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#030303]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_55%_at_50%_30%,rgba(6,182,212,0.18),transparent_75%)] pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#020b0e]/40 to-[#020b0e] pointer-events-none" />
     </div>
   );
 }

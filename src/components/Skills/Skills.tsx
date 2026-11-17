@@ -5,50 +5,57 @@ import { motion } from "framer-motion";
 
 const skillCategories = [
   {
-    title: "AI & Machine Learning",
+    title: "AI-Native & Harnesses",
+    skills: [
+      "Claude Code",
+      "Cursor",
+      "GitHub Copilot",
+      "Context Engineering",
+      "Agent Execution Harnesses",
+      "Guardrails",
+      "LLM Evaluation Frameworks",
+      "AI Legacy Reverse Engineering",
+      "Autonomous Test Automation"
+    ]
+  },
+  {
+    title: "Agentic AI & Orchestration",
     skills: [
       "LangGraph",
       "LangChain",
-      "OpenAI API",
-      "Gemini 3.1 Flash-Lite",
-      "RAG",
+      "Model Context Protocol (MCP)",
+      "RAG Pipelines",
+      "Vector Embeddings",
       "ChromaDB",
-      "TensorFlow MediaPipe"
+      "Gemini API",
+      "OpenAI API",
+      "OCR Pipelines"
     ]
   },
   {
-    title: "Backend Development",
+    title: "Architecture & Backend",
     skills: [
-      "Java",
-      "Spring Boot",
+      "Solution Architecture",
+      "Distributed Systems",
+      "Legacy Modernization",
       "Node.js",
-      "NestJS",
+      "Nest.js",
       "Python",
       "FastAPI",
-      "Prisma ORM",
-      "Strapi CMS"
+      "Java",
+      "Spring Boot"
     ]
   },
   {
-    title: "Frontend & Mobile",
+    title: "Cloud, Frontend & Data",
     skills: [
       "React.js",
       "Next.js",
-      "Angular",
       "TypeScript",
-      "JavaScript",
-      "Tailwind CSS",
-      "Android (Kotlin)"
-    ]
-  },
-  {
-    title: "Cloud & Infrastructure",
-    skills: [
-      "AWS",
-      "Azure Cloud Storage",
       "Docker",
-      "Git",
-      "REST APIs",
+      "Kubernetes",
+      "GCP",
+      "Azure",
       "SQL",
       "MongoDB"
     ]
@@ -65,11 +72,10 @@ export default function Skills() {
         transition={{ duration: 0.8 }}
         className="text-center mb-24"
       >
-        <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-gray-400 mb-6">Expertise</h2>
+        <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-cyan-400 mb-6">Expertise</h2>
         <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Technical <span className="text-gradient">Arsenal</span></h3>
-        <p className="text-gray-400 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
-          A comprehensive suite of tools and technologies I use to build robust, 
-          AI-integrated applications.
+        <p className="text-cyan-100/70 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
+          A comprehensive suite of technologies spanning AI-native harnesses, agent orchestration, enterprise backends, and cloud infrastructure.
         </p>
       </motion.div>
 
@@ -81,14 +87,14 @@ export default function Skills() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="p-10 glass hover:border-white/10 transition-all shadow-xl group flex flex-col"
+            className="p-10 glass border-cyan-500/15 hover:border-cyan-400/35 hover:shadow-[0_0_30px_rgba(6,182,212,0.12)] transition-all shadow-xl group flex flex-col"
           >
-            <h4 className="text-lg font-bold mb-6 text-white/90 group-hover:text-white transition-colors border-b border-white/5 pb-2">{category.title}</h4>
+            <h4 className="text-lg font-bold mb-6 text-cyan-200 group-hover:text-cyan-100 transition-colors border-b border-cyan-500/20 pb-2">{category.title}</h4>
             <div className="flex flex-wrap gap-2">
               {category.skills.map((skill, sIndex) => (
                 <span
                   key={sIndex}
-                  className="px-3 py-1.5 bg-white/5 border border-white/10 text-[10px] text-gray-300 hover:bg-white/10 hover:border-white/30 hover:text-white transition-all cursor-default uppercase font-bold tracking-widest"
+                  className="px-3 py-1.5 bg-cyan-950/40 border border-cyan-500/25 text-[10px] text-cyan-100/90 hover:bg-cyan-500/20 hover:border-cyan-400/60 hover:text-white hover:shadow-[0_0_10px_rgba(34,211,238,0.25)] transition-all cursor-default uppercase font-bold tracking-widest"
                 >
                   {skill}
                 </span>

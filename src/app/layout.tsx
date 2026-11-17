@@ -14,13 +14,29 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "R. Kapil Kumar | Full-Stack + AI Engineer",
-  description: "Portfolio of R. Kapil Kumar - Modern Full-Stack Engineer specializing in AI integrations, backend systems, and performance optimization.",
-  keywords: ["Full-Stack Engineer", "AI Integration", "React", "Node.js", "NestJS", "FastAPI", "Machine Learning"],
+  title: "R. Kapil Kumar | Lead Software Engineer – AI-Native Engineering",
+  description: "Portfolio of R. Kapil Kumar - Lead Software Engineer specializing in AI-Native Engineering, Solution Architecture, and Agentic Systems.",
+  keywords: [
+    "Lead Software Engineer",
+    "AI-Native Engineering",
+    "Solution Architecture",
+    "Agentic Systems",
+    "LangGraph",
+    "Claude Code",
+    "Cursor",
+    "Context Engineering",
+    "Harness Frameworks",
+    "Agent Execution Guardrails",
+    "FastAPI",
+    "NestJS",
+    "Spring Boot",
+    "React",
+    "Next.js",
+  ],
   authors: [{ name: "R. Kapil Kumar" }],
   openGraph: {
-    title: "R. Kapil Kumar | Full-Stack + AI Engineer",
-    description: "Modern Full-Stack Engineer specializing in AI integrations and high-performance systems.",
+    title: "R. Kapil Kumar | Lead Software Engineer – AI-Native Engineering",
+    description: "Lead Software Engineer specializing in AI-Native Engineering, Solution Architecture, and Agentic Systems.",
     type: "website",
   },
 };
@@ -32,7 +48,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#030303] text-white`}>
+      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#020b0e] text-[#ecfeff] relative`}>
+        {/* Subtle ambient cyan glow overlay */}
+        <div className="fixed inset-0 pointer-events-none -z-50 bg-[radial-gradient(circle_at_50%_0%,rgba(6,182,212,0.12),transparent_50%),radial-gradient(circle_at_80%_60%,rgba(8,145,178,0.06),transparent_40%)]" />
         <SmoothScroll>
           {children}
         </SmoothScroll>
