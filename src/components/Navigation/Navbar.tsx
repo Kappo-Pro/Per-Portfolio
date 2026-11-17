@@ -37,12 +37,12 @@ export default function Navbar() {
           animate={{ opacity: 1, x: 0 }}
           className="flex items-center gap-3 cursor-pointer group"
         >
-          <div className="p-2 bg-cyan-500/10 border border-cyan-400/30 text-cyan-400 group-hover:bg-cyan-400 group-hover:text-[#020b0e] transition-all shadow-[0_0_15px_rgba(6,182,212,0.2)]">
-            <Cpu className="w-5 h-5" />
-          </div>
-          <span className="text-lg font-bold tracking-tighter text-white">
-            KAPIL<span className="text-cyan-400">.DEV</span>
-          </span>
+            <div className="p-2 bg-cyan-500/10 border border-cyan-400/30 text-cyan-400 group-hover:bg-cyan-400 group-hover:text-[#020b0e] transition-all shadow-[0_0_15px_rgba(6,182,212,0.2)]">
+              <Cpu className="w-5 h-5" />
+            </div>
+            <span className="text-lg font-bold tracking-tighter text-white">
+              KAPIL<span className="text-cyan-400">.DEV</span>
+            </span>
         </motion.div>
 
         {/* Desktop Links */}
@@ -69,7 +69,7 @@ export default function Navbar() {
         </div>
 
         {/* Mobile Toggle */}
-        <button 
+        <button
           className="md:hidden p-2.5 glass text-gray-400 hover:text-cyan-300 transition-all border-cyan-500/20"
           onClick={() => setIsOpen(!isOpen)}
         >

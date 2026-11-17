@@ -8,14 +8,14 @@ import * as THREE from "three";
 function NeuralNetwork() {
   const ref = useRef<THREE.Points>(null!);
   const [positions, setPositions] = useState<Float32Array | null>(null);
-  
+
   useEffect(() => {
     const pos = new Float32Array(2000 * 3);
     for (let i = 0; i < 2000; i++) {
       const theta = 2 * Math.PI * Math.random();
       const phi = Math.acos(2 * Math.random() - 1);
-      const r = 2.5 * Math.pow(Math.random(), 1/3);
-      
+      const r = 2.5 * Math.pow(Math.random(), 1 / 3);
+
       pos[i * 3] = r * Math.sin(phi) * Math.cos(theta);
       pos[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
       pos[i * 3 + 2] = r * Math.cos(phi);
@@ -54,12 +54,12 @@ function NeuralNetwork() {
 
 export default function HeroBackground() {
   return (
-    <div className="absolute inset-0 -z-10 bg-[#020b0e] overflow-hidden">
-      <Canvas camera={{ position: [0, 0, 1] }}>
-        <NeuralNetwork />
-      </Canvas>
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_55%_at_50%_30%,rgba(6,182,212,0.18),transparent_75%)] pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#020b0e]/40 to-[#020b0e] pointer-events-none" />
-    </div>
-  );
+      <div className="absolute inset-0 -z-10 bg-[#020b0e] overflow-hidden">
+        <Canvas camera={{ position: [0, 0, 1] }}>
+          <NeuralNetwork />
+        </Canvas>
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_75%_55%_at_50%_30%,rgba(6,182,212,0.18),transparent_75%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#020b0e]/40 to-[#020b0e] pointer-events-none" />
+      </div>
+      );
 }

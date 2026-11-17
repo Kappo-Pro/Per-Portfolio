@@ -60,9 +60,8 @@ export function ProjectCard({ title, description, challenge, solution, metrics, 
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`relative pb-3 pt-1 px-3 text-[10px] md:text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all whitespace-nowrap cursor-pointer ${
-                activeTab === tab ? "text-cyan-300" : "text-gray-400 hover:text-cyan-200"
-              }`}
+              className={`relative pb-3 pt-1 px-3 text-[10px] md:text-xs font-bold uppercase tracking-wider flex items-center gap-2 transition-all whitespace-nowrap cursor-pointer ${activeTab === tab ? "text-cyan-300" : "text-gray-400 hover:text-cyan-200"
+                }`}
             >
               {tabContent[tab].icon}
               <span>{tabContent[tab].label}</span>

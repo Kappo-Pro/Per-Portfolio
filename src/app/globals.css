@@ -18,9 +18,11 @@
 }
 
 html {
-  scroll-behavior: initial; /* Lenis handles smooth scroll */
+  scroll-behavior: initial;
+  /* Lenis handles smooth scroll */
   overflow-x: hidden;
-  scroll-padding-top: 100px; /* Accounts for fixed navbar */
+  scroll-padding-top: 100px;
+  /* Accounts for fixed navbar */
 }
 
 body {
@@ -31,7 +33,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-outfit), sans-serif;
 }
 
@@ -86,9 +93,17 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Animations */
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 .animate-float {

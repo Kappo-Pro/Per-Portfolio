@@ -74,9 +74,9 @@ export default function Skills() {
       >
         <h2 className="text-[10px] font-bold tracking-[0.4em] uppercase text-cyan-400 mb-6">Expertise</h2>
         <h3 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Technical <span className="text-gradient">Arsenal</span></h3>
-        <p className="text-cyan-100/70 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
-          A comprehensive suite of technologies spanning AI-native harnesses, agent orchestration, enterprise backends, and cloud infrastructure.
-        </p>
+          <p className="text-cyan-100/70 max-w-2xl mx-auto text-base md:text-lg font-light leading-relaxed">
+            A comprehensive suite of technologies spanning AI-native harnesses, agent orchestration, enterprise backends, and cloud infrastructure.
+          </p>
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

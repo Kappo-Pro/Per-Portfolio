@@ -48,13 +48,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#020b0e] text-[#ecfeff] relative`}>
-        {/* Subtle ambient cyan glow overlay */}
-        <div className="fixed inset-0 pointer-events-none -z-50 bg-[radial-gradient(circle_at_50%_0%,rgba(6,182,212,0.12),transparent_50%),radial-gradient(circle_at_80%_60%,rgba(8,145,178,0.06),transparent_40%)]" />
-        <SmoothScroll>
-          {children}
-        </SmoothScroll>
-      </body>
+        <body className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#020b0e] text-[#ecfeff] relative`}>
+          {/* Subtle ambient cyan glow overlay */}
+          <div className="fixed inset-0 pointer-events-none -z-50 bg-[radial-gradient(circle_at_50%_0%,rgba(6,182,212,0.12),transparent_50%),radial-gradient(circle_at_80%_60%,rgba(8,145,178,0.06),transparent_40%)]" />
+          <SmoothScroll>
+            {children}
+          </SmoothScroll>
+        </body>
     </html>
   );
 }

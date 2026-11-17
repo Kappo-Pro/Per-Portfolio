@@ -70,9 +70,9 @@ export default function Projects() {
       >
         <h2 className="text-sm font-bold tracking-[0.4em] uppercase text-cyan-400 mb-6">Case Studies</h2>
         <h3 className="text-4xl md:text-7xl font-bold mb-10 leading-tight">Architectural <span className="text-gradient">Deep Dives</span></h3>
-        <p className="text-cyan-100/70 max-w-4xl mx-auto text-lg md:text-2xl font-light leading-relaxed">
-          Production systems engineered for deterministic performance, high recall, and clinical-grade compliance.
-        </p>
+          <p className="text-cyan-100/70 max-w-4xl mx-auto text-lg md:text-2xl font-light leading-relaxed">
+            Production systems engineered for deterministic performance, high recall, and clinical-grade compliance.
+          </p>
       </motion.div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">

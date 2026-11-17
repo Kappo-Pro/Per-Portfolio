@@ -64,9 +64,9 @@ export default function Experience() {
       >
         <h2 className="text-sm font-bold tracking-[0.4em] uppercase text-cyan-400 mb-6">Journey</h2>
         <h3 className="text-4xl md:text-7xl font-bold mb-10 leading-tight">Professional <span className="text-gradient">Timeline</span></h3>
-        <p className="text-cyan-100/70 max-w-2xl mx-auto text-lg md:text-xl font-light">
-          A track record of building impactful software and leading engineering initiatives.
-        </p>
+          <p className="text-cyan-100/70 max-w-2xl mx-auto text-lg md:text-xl font-light">
+            A track record of building impactful software and leading engineering initiatives.
+          </p>
       </motion.div>
 
       <div className="relative max-w-4xl mx-auto">
@@ -80,33 +80,32 @@ export default function Experience() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1 }}
-              className={`relative flex flex-col md:flex-row items-center justify-between gap-8 ${
-                index % 2 === 0 ? "md:flex-row-reverse" : ""
-              }`}
+              className={`relative flex flex-col md:flex-row items-center justify-between gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+                }`}
             >
               <div className="w-full md:w-[45%]">
-                <div className="p-8 glass border-cyan-500/15 hover:border-cyan-400/40 hover:shadow-[0_0_35px_rgba(6,182,212,0.12)] transition-all shadow-xl group">
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-cyan-300 bg-cyan-950/50 border border-cyan-500/30 px-2.5 py-1 shadow-[0_0_10px_rgba(6,182,212,0.15)]">
-                      {exp.period}
-                    </span>
-                    <Briefcase className="w-4 h-4 text-cyan-400/70 group-hover:text-cyan-300 transition-colors" />
+                  <div className="p-8 glass border-cyan-500/15 hover:border-cyan-400/40 hover:shadow-[0_0_35px_rgba(6,182,212,0.12)] transition-all shadow-xl group">
+                    <div className="flex items-center justify-between mb-4">
+                        <span className="text-[9px] font-bold uppercase tracking-[0.2em] text-cyan-300 bg-cyan-950/50 border border-cyan-500/30 px-2.5 py-1 shadow-[0_0_10px_rgba(6,182,212,0.15)]">
+                          {exp.period}
+                        </span>
+                        <Briefcase className="w-4 h-4 text-cyan-400/70 group-hover:text-cyan-300 transition-colors" />
+                    </div>
+                    <h4 className="text-lg font-bold mb-1 text-white group-hover:text-cyan-200 transition-colors">{exp.role}</h4>
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-cyan-300 font-semibold text-sm">{exp.company}</span>
+                      <span className="text-xs text-cyan-400/70 font-mono">{exp.location}</span>
+                    </div>
+                      <ul className="text-cyan-100/70 text-[11px] leading-relaxed font-light list-disc pl-4 space-y-2 marker:text-cyan-400">
+                        {exp.description.map((bullet, bIdx) => (
+                          <li key={bIdx}>{bullet}</li>
+                        ))}
+                      </ul>
                   </div>
-                  <h4 className="text-lg font-bold mb-1 text-white group-hover:text-cyan-200 transition-colors">{exp.role}</h4>
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="text-cyan-300 font-semibold text-sm">{exp.company}</span>
-                    <span className="text-xs text-cyan-400/70 font-mono">{exp.location}</span>
-                  </div>
-                  <ul className="text-cyan-100/70 text-[11px] leading-relaxed font-light list-disc pl-4 space-y-2 marker:text-cyan-400">
-                    {exp.description.map((bullet, bIdx) => (
-                      <li key={bIdx}>{bullet}</li>
-                    ))}
-                  </ul>
                 </div>
-              </div>
 
-              <div className="absolute left-0 md:left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-[#020b0e] border-2 border-cyan-400 z-10 shadow-[0_0_18px_rgba(34,211,238,0.7)]" />
-              <div className="hidden md:block w-[45%]" />
+                <div className="absolute left-0 md:left-1/2 -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-[#020b0e] border-2 border-cyan-400 z-10 shadow-[0_0_18px_rgba(34,211,238,0.7)]" />
+                <div className="hidden md:block w-[45%]" />
             </motion.div>
           ))}
         </div>
