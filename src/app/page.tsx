@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       
       {/* Footer */}
-      <footer className="py-12 w-full text-center border-t border-white/5 text-gray-500 text-sm">
+      <footer className="py-12 w-full text-center border-t border-cyan-500/15 text-cyan-400/60 text-sm">
         <p>© 2026 R. Kapil Kumar. Built with Next.js, Three.js & AI.</p>
       </footer>
     </main>
